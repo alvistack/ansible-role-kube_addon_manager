@@ -1,0 +1,51 @@
+---
+
+# (c) Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kube-addon-manager
+  namespace: kube-system
+  labels:
+    app.kubernetes.io/name: kube-addon-manager
+    app.kubernetes.io/part-of: kube-system
+spec:
+  hostNetwork: true
+  containers:
+  - name: kube-addon-manager
+    image: {{ addon_manager_image_repository }}/kube-addon-manager:{{ addon_manager_version }}
+    env:
+      - name: KUBECONFIG
+        value: /root/.kube/config
+    imagePullPolicy: IfNotPresent
+    resources:
+      requests:
+        cpu: 5m
+        memory: 50Mi
+    volumeMounts:
+      - mountPath: /etc/kubernetes/addons
+        name: etc-kubernetes-addons
+        readOnly: true
+      - mountPath: /root/.kube/config
+        name: root-kube-config
+        readOnly: true
+  volumes:
+    - hostPath:
+        path: {{ addon_manager_addon_path }}
+      name: etc-kubernetes-addons
+    - hostPath:
+        path: {{ addon_manager_kubeconfig }}
+      name: root-kube-config
