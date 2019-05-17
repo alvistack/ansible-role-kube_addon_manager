@@ -42,6 +42,10 @@
   src: https://github.com/alvistack/ansible-role-kubelet
   version: develop
 
+- name: kubernetes
+  src: https://github.com/alvistack/ansible-role-kubernetes
+  version: develop
+
 - name: kubernetes-cni
   src: https://github.com/alvistack/ansible-role-kubernetes-cni
   version: develop
