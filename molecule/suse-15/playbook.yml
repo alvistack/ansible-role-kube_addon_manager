@@ -29,7 +29,6 @@
   remote_user: root
   roles:
     - role: minikube
-    - role: kubernetes-flannel
     - role: kubernetes-addon-manager
 
   post_tasks:
