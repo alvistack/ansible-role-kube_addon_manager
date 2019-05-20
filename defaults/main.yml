@@ -24,4 +24,4 @@ addon_manager_image_repository: "k8s.gcr.io"
 addon_manager_addon_path: "/etc/kubernetes/addons"
 
 # KUBECONFIG environment variable holds a list of kubeconfig files.
-addon_manager_kubeconfig: "/root/.kube/config"
+addon_manager_kubeconfig: "/etc/kubernetes/admin.conf"
