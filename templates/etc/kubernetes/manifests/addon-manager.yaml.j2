@@ -24,24 +24,25 @@ metadata:
     app.kubernetes.io/part-of: kube-system
 spec:
   hostNetwork: true
+  dnsPolicy: ClusterFirstWithHostNet
   containers:
-  - name: kube-addon-manager
-    image: {{ addon_manager_image_repository }}/kube-addon-manager:{{ addon_manager_version }}
-    env:
-      - name: KUBECONFIG
-        value: /root/.kube/config
-    imagePullPolicy: IfNotPresent
-    resources:
-      requests:
-        cpu: 5m
-        memory: 50Mi
-    volumeMounts:
-      - mountPath: /etc/kubernetes/addons
-        name: etc-kubernetes-addons
-        readOnly: true
-      - mountPath: /root/.kube/config
-        name: root-kube-config
-        readOnly: true
+    - name: kube-addon-manager
+      image: {{ addon_manager_image_repository }}/kube-addon-manager:{{ addon_manager_version }}
+      env:
+        - name: KUBECONFIG
+          value: /root/.kube/config
+      imagePullPolicy: IfNotPresent
+      resources:
+        requests:
+          cpu: 5m
+          memory: 50Mi
+      volumeMounts:
+        - mountPath: /etc/kubernetes/addons
+          name: etc-kubernetes-addons
+          readOnly: true
+        - mountPath: /root/.kube/config
+          name: root-kube-config
+          readOnly: true
   volumes:
     - hostPath:
         path: {{ addon_manager_addon_path }}
