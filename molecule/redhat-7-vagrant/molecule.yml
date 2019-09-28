@@ -32,6 +32,9 @@ platforms:
       - "customize [ 'createhd', '--filename', \"/tmp/#{vagrant_config_hash['instance']['name']}.vmdk\", '--size', 10 * 1024 ]"
       - "customize [ 'storagectl', :id, '--name', 'SCSI Controller', '--add', 'scsi' ]"
       - "customize [ 'storageattach', :id, '--storagectl', 'SCSI Controller', '--port', 3, '--device', 0, '--type', 'hdd', '--medium', \"/tmp/#{vagrant_config_hash['instance']['name']}.vmdk\" ]"
+    groups:
+      - kube-master
+      - kube-node
 lint:
   name: yamllint
 dependency:
