@@ -1,8 +1,8 @@
 # Ansible Role for addon-manager on Kubernetes
 
-[![Travis](https://img.shields.io/travis/alvistack/ansible-role-kubernetes-addon-manager.svg)](https://travis-ci.org/alvistack/ansible-role-kubernetes-addon-manager)
-[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-kubernetes-addon-manager.svg)](https://github.com/alvistack/ansible-role-kubernetes-addon-manager)
-[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-kubernetes-addon-manager.svg)](https://github.com/alvistack/ansible-role-kubernetes-addon-manager/blob/master/LICENSE)
+[![Travis](https://img.shields.io/travis/alvistack/ansible-role-kubernetes_addon_manager.svg)](https://travis-ci.org/alvistack/ansible-role-kubernetes_addon_manager)
+[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-kubernetes_addon_manager.svg)](https://github.com/alvistack/ansible-role-kubernetes_addon_manager)
+[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-kubernetes_addon_manager.svg)](https://github.com/alvistack/ansible-role-kubernetes_addon_manager/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.kubernetes_addon_manager-blue.svg)](https://galaxy.ansible.com/alvistack/kubernetes_addon_manager)
 
 Ansible Role for addon-manager on Kubernetes Installation.
