@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # addon-manager version.
-addon_manager_version: "v9.0.2"
+addon_manager_version: "v9.1.0"
 
 # ImageRepository sets the container registry to pull images from.
 addon_manager_image_repository: "k8s.gcr.io"
