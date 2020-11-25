@@ -1,6 +1,6 @@
 # Ansible Role for addon-manager on Kubernetes
 
-[![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-kubernetes_addon_manager.svg)](https://travis-ci.com/alvistack/ansible-role-kubernetes_addon_manager)
+[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-kubernetes_addon_manager/master)](https://gitlab.com/alvistack/ansible-role-kubernetes_addon_manager/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-kubernetes_addon_manager.svg)](https://github.com/alvistack/ansible-role-kubernetes_addon_manager/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-kubernetes_addon_manager.svg)](https://github.com/alvistack/ansible-role-kubernetes_addon_manager/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.kubernetes_addon_manager-blue.svg)](https://galaxy.ansible.com/alvistack/kubernetes_addon_manager)
@@ -13,11 +13,11 @@ This role require Ansible 2.10 or higher.
 
 This role was designed for:
 
-  - Ubuntu 18.04/20.04
+  - Ubuntu 18.04/20.04/20.10
   - RHEL/CentOS 7/8
   - openSUSE Leap 15.2
   - Debian 10
-  - Fedora 32
+  - Fedora 33
 
 ## Role Variables
 
