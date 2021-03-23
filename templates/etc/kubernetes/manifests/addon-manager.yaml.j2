@@ -28,6 +28,7 @@ spec:
   containers:
     - name: kube-addon-manager
       image: {{ addon_manager_image_repository }}/kube-addon-manager:{{ addon_manager_version }}
+      imagePullPolicy: IfNotPresent
       env:
         - name: KUBECONFIG
           value: /root/.kube/config
