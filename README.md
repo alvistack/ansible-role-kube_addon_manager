@@ -1,6 +1,9 @@
 # Ansible Role for addon-manager on Kubernetes
 
-[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-kube_addon_manager/master)](https://gitlab.com/alvistack/ansible-role-kube_addon_manager/-/pipelines) [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-kube_addon_manager.svg)](https://github.com/alvistack/ansible-role-kube_addon_manager/releases) [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-kube_addon_manager.svg)](https://github.com/alvistack/ansible-role-kube_addon_manager/blob/master/LICENSE) [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.kube_addon_manager-blue.svg)](https://galaxy.ansible.com/alvistack/kube_addon_manager)
+[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-kube_addon_manager/master)](https://gitlab.com/alvistack/ansible-role-kube_addon_manager/-/pipelines)
+[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-kube_addon_manager.svg)](https://github.com/alvistack/ansible-role-kube_addon_manager/releases)
+[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-kube_addon_manager.svg)](https://github.com/alvistack/ansible-role-kube_addon_manager/blob/master/LICENSE)
+[![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.kube_addon_manager-blue.svg)](https://galaxy.ansible.com/alvistack/kube_addon_manager)
 
 Ansible Role for addon-manager on Kubernetes Installation.
 
