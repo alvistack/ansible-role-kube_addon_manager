@@ -16,7 +16,7 @@
 
 galaxy_info:
   namespace: alvistack
-  role_name: kubernetes_addon_manager
+  role_name: kube_addon_manager
   author: "Wong Hoi Sing Edison <hswong3i@pantarei-design.com>"
   description: Ansible Role for addon-manager on Kubernetes Installation
   company: PantaRei Design
