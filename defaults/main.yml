@@ -15,7 +15,7 @@
 # limitations under the License.
 
 # ADDON_PATH where template files located for addon-manager monitoring.
-addon_manager_addon_path: "/etc/kubernetes/addons"
+kube_addon_manager_addon_path: "/etc/kubernetes/addons"
 
 # KUBECONFIG environment variable holds a list of kubeconfig files.
-addon_manager_kubeconfig: "/etc/kubernetes/admin.conf"
+kube_addon_manager_kubeconfig: "/etc/kubernetes/admin.conf"

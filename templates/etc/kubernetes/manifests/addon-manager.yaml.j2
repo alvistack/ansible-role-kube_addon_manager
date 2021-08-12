@@ -45,8 +45,8 @@ spec:
           readOnly: true
   volumes:
     - hostPath:
-        path: {{ addon_manager_addon_path }}
+        path: {{ kube_addon_manager_addon_path }}
       name: etc-kubernetes-addons
     - hostPath:
-        path: {{ addon_manager_kubeconfig }}
+        path: {{ kube_addon_manager_kubeconfig }}
       name: root-kube-config
