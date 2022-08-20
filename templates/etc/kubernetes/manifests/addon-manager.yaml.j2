@@ -27,7 +27,7 @@ spec:
   dnsPolicy: ClusterFirstWithHostNet
   containers:
     - name: kube-addon-manager
-      image: gcr.io/k8s-staging-addon-manager/kube-addon-manager-amd64:v9.1.6
+      image: registry.k8s.io/addon-manager/kube-addon-manager-amd64:v9.1.6
       imagePullPolicy: IfNotPresent
       env:
         - name: KUBECONFIG
