@@ -24,6 +24,6 @@ collections:
     version: ">=1.7.0,<2.0.0"
 
 roles:
-  - name: alvistack.kube_flannel
-    src: https://github.com/alvistack/ansible-role-kube_flannel
+  - name: alvistack.kube_cilium
+    src: https://github.com/alvistack/ansible-role-kube_cilium
     version: develop
